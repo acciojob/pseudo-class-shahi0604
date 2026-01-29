@@ -1,14 +1,19 @@
-/*  your css code here. If applicable */
 #container {
-margin: 20px;
+  margin: 20px;
 }
+
+/* Text BEFORE the container */
 #container::before {
-content: "Before Element ";
-color: #f00;
-font-size: 20px;
+  content: "Before Container";
+  color: #f00;
+  font-size: 20px;
+  display: block;
 }
+
+/* Text AFTER the container */
 #container::after {
-content: " After Element";
-color: #f00;
-font-size: 20px;
+  content: "After Container";
+  color: #f00;
+  font-size: 20px;
+  display: block;
 }
